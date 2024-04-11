@@ -1,0 +1,85 @@
+.sidebar-bg {
+  font-family: "Kaisei HarunoUmi", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 300vh;
+  background: url('../assets/blank background.png') no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.sidebar-logo {
+  display: inline-block;
+  margin-left: 8%;
+  margin-top: 8%;
+  margin-bottom: 25%;
+  padding: 0;
+  width: 180px;
+  height: 70px;
+}
+
+.sidebar-app {
+  display: flex;
+  height: 300vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to bottom, #141414c0, #050505, #000000c0);
+  color: #ffffff;
+  padding: 20px;
+}
+
+.side-content {
+  flex: 1;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li {
+  margin-bottom: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  color: #db8402;
+}
+
+.rotate-icon {
+  transform: rotate(360deg); 
+  transition: transform 0.3s ease; 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff; /* Background color for the dropdown menu */
+  border: 2px solid #ccc; /* Border for the dropdown menu */
+  border-radius: 4px; /* Border radius for the dropdown menu */
+  padding: 8px 0; /* Padding for the dropdown menu */
+  z-index: 1; /* Ensure the dropdown menu appears above other elements */
+}
+
+.dropdown-menu li {
+  padding: 8px 15px; /* Padding for each dropdown menu item */
+  color: #333; /* Text color for dropdown menu items */
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Background color on hover for dropdown menu items */
+}
+
+li:hover .dropdown-menu {
+  display: block; /* Show dropdown menu on hover */
+}
